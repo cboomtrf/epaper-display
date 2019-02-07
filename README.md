@@ -7,7 +7,7 @@ _Language versions:_\
 
 # Clock + weather + AQI + traffic - on Raspberry Pi & e-paper
 
-This is a forked project of [waveshare-clock-and-more](https://github.com/pskowronek/epaper-clock-and-more), which itself is a fork of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays. The first fork added support for Waveshare 2.7inch BWR e-paper displays.
+This is a forked project of [epaper-clock-and-more](https://github.com/pskowronek/epaper-clock-and-more), which itself is a fork of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays. The first fork added support for Waveshare 2.7inch BWR e-paper displays.
 
 ### This project enhances the original two projects to support Waveshare 2.13inch multicolor e-paper displays.
 ### NB: 2.13inch support is not yet in release.
