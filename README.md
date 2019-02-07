@@ -7,10 +7,10 @@ _Language versions:_\
 
 # Clock + weather + AQI + traffic - on Raspberry Pi & e-paper
 
-This is a forked project of [waveshare-clock-and-more](https://github.com/pskowronek/epaper-clock-and-more), which itself is a fork of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays.
-This project enhances the original two projects to support Waveshare 2.13inch displays with red dye (BWR).
+This is a forked project of [waveshare-clock-and-more](https://github.com/pskowronek/epaper-clock-and-more), which itself is a fork of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays. The first fork added support for Waveshare 2.7inch BWR e-paper displays.
 
-### NB: 2.13inch support will be added in this project, but is not yet added. 
+### This project enhances the original two projects to support Waveshare 2.13inch multicolor e-paper displays.
+### NB: 2.13inch support is not yet in release.
 Please contact https://github.com/cboomtrf for an estimated release date.
 
 The following features are available, mainly implemented by the original projects:
@@ -22,7 +22,7 @@ The following features are available, mainly implemented by the original project
 - buttons support to display detailed information about: weather, air quality, traffic and system information (on supported devices, i.e. 2.7inch HAT with integrated buttons, or in this project expanded to support buttons from Btn Shim by Pimoroni combined with 2.13inch HAT.
 - font with relaxed license already included in the project
 
-For both new gauges one may configure warning levels - in such a case the particular gauge becomes red (on supported devices with multicolor frames, i.e. 2.17inch Waveshare e-paper).
+For both new gauges one may configure warning levels - in such a case the particular gauge becomes red (on supported devices with multicolor frames, i.e. 2.13inch Waveshare e-paper).
 
 ## Screenshots / Photos
 
