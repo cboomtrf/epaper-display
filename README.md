@@ -1,42 +1,46 @@
 _Language versions:_\
-[![EN](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/flags/lang-US.png)](https://github.com/pskowronek/epaper-clock-and-more) 
-[![PL](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/flags/lang-PL.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=pl&u=https://github.com/pskowronek/epaper-clock-and-more)
-[![DE](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/flags/lang-DE.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=de&u=https://github.com/pskowronek/epaper-clock-and-more)
-[![FR](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/flags/lang-FR.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=fr&u=https://github.com/pskowronek/epaper-clock-and-more)
-[![ES](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/flags/lang-ES.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=es&u=https://github.com/pskowronek/epaper-clock-and-more)
+[![EN](https://github.com/cboomtrf/epaper-display/raw/master/www/flags/lang-US.png)](https://github.com/cboomtrf/epaper-display) 
+[![PL](https://github.com/cboomtrf/epaper-display/raw/master/www/flags/lang-PL.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=pl&u=https://github.com/cboomtrf/epaper-display)
+[![DE](https://github.com/cboomtrf/epaper-display/raw/master/www/flags/lang-DE.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=de&u=https://github.com/cboomtrf/epaper-display)
+[![FR](https://github.com/cboomtrf/epaper-display/raw/master/www/flags/lang-FR.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=fr&u=https://github.com/cboomtrf/epaper-display)
+[![ES](https://github.com/cboomtrf/epaper-display/raw/master/www/flags/lang-ES.png)](https://translate.googleusercontent.com/translate_c?sl=en&tl=es&u=https://github.com/cboomtrf/epaper-display)
 
-# Clock + weather + AQI + traffic - on Raspberry Pi & e-paper [![Build Status](https://travis-ci.org/pskowronek/epaper-clock-and-more.svg?branch=master)](https://travis-ci.org/pskowronek/epaper-clock-and-more)
+# Clock + weather + AQI + traffic - on Raspberry Pi & e-paper
 
-This is a forked project of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays.
-This project enhances the original project to support Waveshare 2.7inch displays with red dye (BWR) and adds the following additional features:
+This is a forked project of [waveshare-clock-and-more](https://github.com/pskowronek/epaper-clock-and-more), which itself is a fork of [waveshare-clock](https://github.com/prehensile/waveshare-clock) that only displayed clock and weather and supported only Waveshare 4.2inch B&W displays.
+This project enhances the original two projects to support Waveshare 2.13inch displays with red dye (BWR).
+
+### NB: 2.13inch support will be added in this project, but is not yet added. 
+Please contact https://github.com/cboomtrf for an estimated release date.
+
+The following features are available, mainly implemented by the original projects:
 - gauges for current traffic drive times for two configured destinations (thanks to [Google Maps API](https://developers.google.com/maps/documentation/))
 - gauge for air quality index (AQI) of home location (thanks to [Airly.eu API](http://developer.airly.eu/))
 - weather gauge may display:
   - alerts issued by governmental authorities - it works for the EU, US & Canada (thanks to [DarkSky.net API](https://darksky.net/dev/docs))
   - warning about storms in defined vicinity (thanks to [DarkSky.net API](https://darksky.net/dev/docs))
-- buttons support to display detailed information about: weather, air quality, traffic and system information (on supported devices, i.e. 2.7inch HUT with switches)
+- buttons support to display detailed information about: weather, air quality, traffic and system information (on supported devices, i.e. 2.7inch HAT with integrated buttons, or in this project expanded to support buttons from Btn Shim by Pimoroni combined with 2.13inch HAT.
 - font with relaxed license already included in the project
 
-For both new gauges one may configure warning levels - in such a case the particular gauge becomes red (on supported devices, i.e. 2.7inch BWR).
+For both new gauges one may configure warning levels - in such a case the particular gauge becomes red (on supported devices with multicolor frames, i.e. 2.17inch Waveshare e-paper).
 
 ## Screenshots / Photos
 
 ### Screenshots
+Courtesy of https://github.com/pskowronek/epaper-clock-and-more
 ![Screenshots](https://github.com/pskowronek/epaper-clock-and-more/raw/master/www/screenshots/epaper-screenshots.png)
 
 
 ### Photos
+Courtesy of https://github.com/pskowronek/epaper-clock-and-more
 [![Assembled](https://pskowronek.github.io/epaper-clock-and-more/www/assembled/01.JPG)](https://pskowronek.github.io/epaper-clock-and-more/www/assembled/index.html "Photos of assembled epaper + rasberry pi zero running epaper-clock-and-more")
 
 More photos of the assembled e-paper 2.7inch display sitting on top of Raspberry Pi zero enclosed in a custom-built LEGO™ housing and running this project are [here](https://pskowronek.github.io/epaper-clock-and-more/www/assembled/index.html "Photos of assembled epaper + rasberry pi zero running epaper-clock-and-more").
 
-*BTW, these LEGO bricks are almost 30 years old (!)*
-
-
 ## Hardware Requirements
 
-- [Raspberry Pi Zero](https://botland.com.pl/moduly-i-zestawy-raspberry-pi-zero/9749-raspberry-pi-zero-wh-512mb-ram-wifi-bt-41-ze-zlaczami.html) or similar
-- [e-paper display 2.7inch HUT](https://botland.com.pl/wyswietlacze-e-paper/9656-waveshare-e-paper-hat-b-27-264x176px-modul-z-wyswietlaczem-trojkolorowym-nakladka-do-raspberry-pi.html) or e-paper display 4.2inch B&W display with SPI
+- [Raspberry Pi Zero WH](https://www.raspberrypi.org/blog/zero-wh/) or similar
+- [e-paper display 2.15inch HAT multicolor](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT), e-paper display 2.7inch BWR or e-paper display 4.2inch B&W display with SPI
 - 8-16GB SD card
 
 ## Installation
@@ -71,6 +75,9 @@ More photos of the assembled e-paper 2.7inch display sitting on top of Raspberry
 
 ## Tech details
 
+### NB: 2.13inch support will be added in this project, but is not yet added. 
+Please contact https://github.com/cboomtrf for an estimated release date.
+
 ### 2.7inch & 4.2inch support
 
 Since the original project supported 4.2inch B&W displays only, the code has been modified to support also 2.7inch B+W+R displays. This has been done by adding a second red canvas and down-sizing the black and red canvases to smaller resolutions as required by 2.7inch displays.
@@ -95,7 +102,7 @@ To enable this feature set the following environment variable: ```export EPAPER_
 
 ## TODOs
 
-- rework drawing.py (~~make it a class~~ and gagues rendered w/o knowledge about their final placement)
+- add support for 2.13inch Waveshare e-paper HAT
 
 ## License
 
@@ -103,6 +110,7 @@ Since this project is a fork, the original licenses still apply. The modificatio
 
 ## Authors
 
+- [C Boom](https://github.com/cboomtrf)
 - [Piotr Skowronek](https://github.com/pskowronek)
 - [Original author](https://github.com/prehensile)
 
